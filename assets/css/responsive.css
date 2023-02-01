@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* --------------------
+!Mobile version
+-------------------- */
+@media (max-width: 760px){
+    /* --------------------
+    !Common part
+    -------------------- */
+    .breadcrumb {
+        margin: 20px 4%;
+    }
+
+    /* --------------------
+    !Header
+    -------------------- */
+    header {
+        padding: 0 4%;
+    }
+
+    .main-nav {
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        width: 44px;
+    }
+
+    .contact {
+        display: none !important;
+    }
+
+    .contact-logo {
+        display: block !important;
+        margin-top: 10px;
+    }
+
+    .contact-logo:hover {
+        opacity: 0.7;
+    }
+
+    /* --------------------
+    !Home
+    -------------------- */
+    .page-title {
+        padding-top: 100px;
+    }
+
+    /* --------------------
+    !Profile
+    -------------------- */
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px){
+    .sns-logo {
+        display: none !important;
+    }
+}

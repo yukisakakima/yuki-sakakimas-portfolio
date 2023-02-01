@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/* --------------------
+!Common part
+-------------------- */
+* {
+    word-wrap: break-word;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: HelveticaNeue;
+    color: rgb(13, 203, 69);
+    background-color: black;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'VT323', monospace;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'VT323', monospace;
+}
+
+h3 {
+    font-size: 32px;
+    font-family: 'VT323', monospace;
+}
+
+p ,a {
+    font-size: 16px;
+}
+
+b {
+    font-weight: bold;
+    color: yellow;
+}
+
+nav ul li a {
+    font-family: 'VT323', monospace;
+    font-size: 36px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    /* todo */
+    z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+    max-width: 1100px;
+
+    /* todo */
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.content {
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.nav-link {
+    background:
+        radial-gradient(circle, yellow 50%, transparent) center/var(--d, 0) var(--d, 0) no-repeat,
+        linear-gradient( yellow 0 0) bottom -12px left 50% /2px 2px no-repeat;
+    transition: 0.2s, background-position 0.2s 0.2s;
+}
+
+.nav-link:hover {
+    transition: 0.2s, background-size 0.1s 0.1s, color 0.1s 0.1s;
+    background-position: center;
+    --d: 180%;
+    color: rgb(13, 203, 69);
+}
+
+.link {
+    background:
+        radial-gradient(circle closest-side, currentColor 80%, transparent) bottom /2px 2px no-repeat,
+        radial-gradient(circle closest-side, currentColor 80%, transparent) bottom /2px 2px no-repeat,
+        linear-gradient(currentColor 0 0) bottom left /var(--d, 0%) 2px no-repeat,
+        linear-gradient(currentColor 0 0) bottom right/var(--d, 0%) 2px no-repeat;
+    transition: 0.2s, background-position 0.2s 0.2s;
+}
+
+.link:hover {
+    opacity: 0.7;
+    --d: 100%;
+    background-position: bottom left, bottom right;
+    transition: 0.2s, background-size 0.2s 0.2s;
+}
+
+.subtext {
+    color: gray;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+}
+
+.breadcrumb {
+    display: flex;
+    margin: 20px 100px;
+}
+
+.breadcrumb li {
+    margin-right: 16px;
+}
+
+.breadcrumb-subtext {
+    color: gray;
+}
+
+.content-border {
+    border-bottom: 2px solid gray;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+/* --------------------
+!Header
+-------------------- */
+header {
+    height: 80px;
+    line-height: 80px;
+    background-color: black;
+    border-bottom: solid 1px gray;
+    display: flex;
+    padding: 0 100px;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.header-content-left {
+    display: flex;
+}
+
+.logo {
+    width: 44px;
+    margin: 18px 0;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 24px;
+}
+
+.contact {
+    display: block !important;
+    font-size: 20px;
+    font-family: 'VT323', monospace;
+    margin-left: auto;
+
+    /* todo */
+    height: 52px;
+}
+
+.contact-logo {
+    display: none !important;
+    margin-left: auto;
+}
+
+/* --------------------
+!Footer
+-------------------- */
+footer {
+    height: 48px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 17px 0;
+    border-top: solid 1px gray;
+    bottom: 0;
+}
+
+footer p {
+    color: gray;
+    font-size: 14px;
+    font-family: 'VT323', monospace;
+}
+
+/* --------------------
+!Home
+-------------------- */
+#particles-js {
+    /* todo */
+    height: calc(100vh - 80px);
+    position: fixed;/*描画固定*/
+    z-index: -1;/*描画を一番下に*/
+    width: 100%;
+}
+
+.page-title {
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    text-align: center;
+    height: calc(100vh - 80px - 48px);
+    padding-top: 200px;
+    /* todo */
+    /* display: flex; */
+    /* align-items: center; */
+}
+/* --------------------
+!Profile
+-------------------- */
+.profile-image {
+    height: 300px;
+    width: 300px;
+    margin-right: 40px;
+}
+
+.profile-introduction {
+    padding: 20px 0;
+}
+
+.my-name {
+    font-family: 'VT323', monospace;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.sns-contents {
+    display: flex;
+    margin-top: 10px;
+}
+
+.sns-contents li {
+    margin-right: 20px;
+}
+
+.sns-logo {
+    height: 16px;
+    margin-right: 6px;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 30px;
+}
+
+.awards-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --------------------
+!Radar
+-------------------- */
+#radar {
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.radar-introduction {
+    margin: 0 5% 16px;
+}
+
+/* --------------------
+!Works
+-------------------- */
+.works-content {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 75px
+}
+
+.item {
+    border: 1px solid rgb(13, 203, 69);
+}
+
+.item a img {
+    aspect-ratio: 4 / 3;
+}
+
+.item:hover {
+    transition: all  0.3s ease;
+    box-shadow: 0 0 12px 4px gray;
+    transform: scale(1.02,1.02);
+    opacity: 0.7;
+}
+
+.works-content img {
+    vertical-align: top;
+    width: 100%;
+}
+
+.item-content {
+    background-color: black;
+    border-top: 1px solid rgb(13, 203, 69);
+    padding: 20px;
+}
+
+.item-text {
+    font-size: 24px;
+    font-family: 'VT323', monospace;
+    padding: 10px 0;
+}
+
+.item-date {
+    font-size: 16px;
+    font-family: 'VT323', monospace;
+    text-align: right;
+}
+
+/* --------------------
+!Portfolio
+-------------------- */
+
+.portfolio-image {
+    margin: 12px 0;
+}
+
+.portfolio-content {
+    padding-bottom: 24px;
+    margin: 12px 0;
+}
+
+.portfolio-link {
+    font-family: 'VT323', monospace;
+    color: white;
+}
+
+.portfolio-link span {
+    color: rgb(241, 134, 8);
+    font-size: 20px;
+}
+
+.portfolio-link a {
+    font-size: 20px;
+}
+
+/* --------------------
+!Typing
+-------------------- */
+.type-writer::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
