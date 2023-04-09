@@ -8,12 +8,26 @@
 
 html {
     font-size: 100%;
+
+    /* !add */
+    height: 100%;
 }
 
 body {
     font-family: HelveticaNeue;
     color: rgb(13, 203, 69);
     background-color: black;
+
+    /* !add */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+
+main {
+    /* !add */
+    flex: 1;
 }
 
 h1 {
@@ -181,6 +195,8 @@ footer {
     padding: 17px 0;
     border-top: solid 1px gray;
     bottom: 0;
+    /* !add */
+    flex-shrink: 0;
 }
 
 footer p {
