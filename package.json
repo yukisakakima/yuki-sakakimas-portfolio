@@ -92,6 +92,9 @@
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2"
   },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
