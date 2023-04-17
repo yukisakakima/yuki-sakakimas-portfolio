@@ -19,4 +19,4 @@ app.get('/yuki_sakakimas_portfolio', (req, res) => {
     res.render('yuki_sakakimas_portfolio.ejs');
 });
 
-server.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000);
