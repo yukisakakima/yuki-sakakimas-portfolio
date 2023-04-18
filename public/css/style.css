@@ -194,7 +194,6 @@ footer {
     text-align: center;
     padding: 17px 0;
     border-top: solid 1px gray;
-    bottom: 0;
     /* !add */
     flex-shrink: 0;
 }
