@@ -1,14 +1,18 @@
 # Yuki Sakakima's Portfolio
-初学者なりに初めて制作した、作品集を閲覧出来るサイトです。
+初学者なりに制作した、作品集を閲覧出来るサイトです。<br>
 レスポンシブ対応しておりますのでスマホからもご確認頂けます。
 
-## URL
+## サイトURL
 [Yuki Sakakima's Portfolio](https://yuki-sakakimas-portfolio.herokuapp.com/)
 
 ## 使用技術
 - HTML
 - CSS
 - JavaScript
-- jQuery
-- Node.js v19.9.0
+  - jQuery
+  - particle.js
+  - Chart.js
+  - Curzr
+- Node.js v15.0.0
+  - Express.js
 - Heroku
