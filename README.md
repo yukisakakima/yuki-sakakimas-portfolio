@@ -22,3 +22,6 @@
 - Node.js v15.0.0
   - Express.js
 - Heroku
+
+## Structure :
+<img alt="structure" src="/public/images/structure.png">
