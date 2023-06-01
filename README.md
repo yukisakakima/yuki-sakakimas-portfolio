@@ -20,7 +20,7 @@
   - Chart.js
   - Curzr
 - Node.js v15.0.0
-  - Express.js 4.16.1
+  - Express.js 4.18.2
 - Heroku
 
 ## Structure :
