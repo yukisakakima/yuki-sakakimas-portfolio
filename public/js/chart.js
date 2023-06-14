@@ -5,7 +5,7 @@ var radar = new Chart(ctx, {
     //データの設定
     data: {
         //データ項目のラベル
-        labels: ["HTML&CSS", "Sass", "JS", "TS", "jQuery", "Node.js", "Express.js", "Ruby", "Ruby on Rails", "Python", "Flask", "Go", "SQL", "Git&Github"],
+        labels: ["HTML/CSS", "Sass", "JS", "TS", "jQuery", "Node.js", "Express.js", "Ruby", "Ruby on Rails", "Python", "Flask", "Go", "RDB/SQL", "Git/Github"],
         //データセット
         datasets: [{
             // label: "スキル分析",
@@ -24,7 +24,7 @@ var radar = new Chart(ctx, {
             //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
             hitRadius: 5,
             //グラフのデータ
-            data: [4, 2, 2, 2, 2, 3, 3, 3, 3, 3, 2, 2, 2, 4]
+            data: [4, 2, 3, 2, 3, 3, 3, 3, 3, 4, 3, 2, 3, 4]
         }]
     },
     //オプションの設定

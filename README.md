@@ -15,7 +15,6 @@
 - HTML
 - CSS
 - JavaScript
-  - jQuery
   - particle.js
   - Chart.js
   - Curzr
