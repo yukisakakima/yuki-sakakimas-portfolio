@@ -64,7 +64,6 @@ img {
 }
 
 .wrapper {
-    /* todo */
     z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
     max-width: 1100px;
 
