@@ -19,4 +19,8 @@ app.get('/yuki_sakakimas_portfolio', (req, res) => {
     res.render('yuki_sakakimas_portfolio.ejs');
 });
 
+app.get('/quick_quill', (req, res) => {
+    res.render('quick_quill.ejs');
+});
+
 app.listen(process.env.PORT || 3000);
