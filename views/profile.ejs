@@ -1,104 +1,155 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title>Yuki Sakakima's Portfolio - Profile</title>
-        <meta name="description" content="Yuki Sakakima's Portfolio">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <title>Yuki Sakakima's Portfolio - Profile</title>
+    <meta name="description" content="Yuki Sakakima's Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="/css/reset.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/responsive.css">
-        <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <!-- CDN -->
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-    </head>
-    <body>
-        <header id="header">
-            <div class="header-content-left">
-                <a href="/"><img src="/images/icon.png" class="logo" alt="logo"></a>
-                <nav>
-                    <ul class="main-nav">
-                        <li><a class="nav-item nav-link" href="/">Home</a></li>
-                        <li><a class="nav-item nav-link" href="/profile">Profile</a></li>
-                        <li><a class="nav-item nav-link" href="/works">Works</a></li>
-                    </ul>
-                </nav>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!-- CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-content-left">
+        <a href="/"><img src="/images/icon.png" class="logo" alt="logo" /></a>
+        <nav>
+          <ul class="main-nav">
+            <li><a class="nav-item nav-link" href="/">Home</a></li>
+            <li><a class="nav-item nav-link" href="/profile">Profile</a></li>
+            <li><a class="nav-item nav-link" href="/works">Works</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a class="contact link" href="mailto:yuki.sakakima.work@gmail.com"
+        >&lt;Click to contact&gt;</a
+      >
+      <a class="contact-logo" href="mailto:yuki.sakakima.work@gmail.com"
+        ><span class="material-symbols-outlined">contact_mail</span></a
+      >
+    </header>
+    <div id="particles-js"></div>
+    <main>
+      <ol class="breadcrumb">
+        <li><a href="/" class="link breadcrumb-subtext">Home</a></li>
+        <li class="breadcrumb-subtext">&gt;</li>
+        <li>Profile</li>
+      </ol>
+      <div class="wrapper">
+        <div class="content">
+          <h2 class="section-title">Profile</h2>
+          <div class="profile-content">
+            <img
+              src="/images/profile-image.jpg"
+              class="profile-image"
+              alt="profile-image"
+            />
+            <div>
+              <p class="my-name content-border">Yuki Sakakima</p>
+              <p class="profile-introduction content-border">
+                愛知県名古屋市出身。<br />
+                名古屋商科大学 英米学科
+                入学後、並々ならぬ音楽への想いから、一念発起、名古屋スクールオブミュージック&ダンス専門学校へ入学。<br />
+                学校在学時から半年後には、学業と併用しながら、<b>作曲家兼DJ</b>として活動を開始。<br />
+                2019年、更なる活動の幅を広げる為上京。<br />
+                作曲家兼DJとして、4年程活動期間が経過した頃、精神病に罹患したことをきっかけに、徐々に新たな業界を模索するようになる。<br />
+                これを契機に、現在は、新たな挑戦として、就労移行支援に通所し、未経験からエンジニアへの道を志し、日々エンジニアに纏わる学習を継続しております。<br />
+                また、<a
+                  href="https://qiita.com/yukisakakima"
+                  target="_blank"
+                  class="link"
+                  >Qiita</a
+                >では、定期的に学習内容を寄稿しております。
+              </p>
+              <!-- todo -->
+              <ul class="sns-contents">
+                <li>
+                  <div class="sns-contents">
+                    <a href="https://github.com/yukisakakima" target="_blank"
+                      ><img
+                        class="sns-logo"
+                        src="/images/github-logo.png"
+                        alt="github-logo"
+                    /></a>
+                    <a
+                      href="https://github.com/yukisakakima"
+                      target="_blank"
+                      class="link"
+                      >GitHub</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="sns-contents">
+                    <a href="https://qiita.com/yukisakakima" target="_blank"
+                      ><img
+                        class="sns-logo"
+                        src="/images/qiita-logo.png"
+                        alt="qiita-logo"
+                    /></a>
+                    <a
+                      href="https://qiita.com/yukisakakima"
+                      target="_blank"
+                      class="link"
+                      >Qitta</a
+                    >
+                  </div>
+                </li>
+                <li class="sns-contents">
+                  <a href="mailto:yuki.sakakima.work@gmail.com"
+                    ><img
+                      class="sns-logo"
+                      src="/images/gmail-logo.png"
+                      alt="gmail-logo"
+                  /></a>
+                  <a href="mailto:yuki.sakakima.work@gmail.com" class="link"
+                    >yuki.sakakima.work@gmail.com</a
+                  >
+                </li>
+              </ul>
             </div>
-            <a class="contact link" href="mailto:yuki.sakakima.work@gmail.com">&lt;Click to contact&gt;</a>
-            <a class="contact-logo" href="mailto:yuki.sakakima.work@gmail.com"><span class="material-symbols-outlined">contact_mail</span></a>
-        </header>
-        <div id="particles-js"></div>
-        <main>
-            <ol class="breadcrumb">
-                <li><a href="/" class="link breadcrumb-subtext">Home</a></li>
-                <li class="breadcrumb-subtext">&gt;</li>
-                <li>Profile</li>
-            </ol>
-            <div class="wrapper">
-                <div class="content">
-                    <h2 class="section-title">Profile</h2>
-                    <div class="profile-content">
-                        <img src="/images/profile-image.jpg" class="profile-image" alt="profile-image">
-                        <div>
-                            <p class="my-name content-border">Yuki Sakakima</p>
-                            <p class="profile-introduction content-border">
-                                愛知県名古屋市出身。<br>
-                                名古屋商科大学 英米学科 入学後、並々ならぬ音楽への想いから、一念発起、名古屋スクールオブミュージック&ダンス専門学校へ入学。<br>
-                                学校在学時から半年後には、学業と併用しながら、<b>作曲家兼DJ</b>として活動を開始。<br>
-                                2019年、更なる活動の幅を広げる為上京。<br>
-                                作曲家兼DJとして、4年程活動期間が経過した頃、精神病に罹患したことをきっかけに、徐々に新たな業界を模索するようになる。<br>
-                                これを契機に、現在は、新たな挑戦として、就労移行支援に通所し、未経験からエンジニアへの道を志し、日々エンジニアに纏わる学習を継続しております。<br>
-                                また、<a href="https://qiita.com/yukisakakima" target="_blank" class="link">Qiita</a>では、定期的に学習内容を寄稿しております。
-                            </p>
-                            <!-- todo -->
-                            <ul class="sns-contents">
-                                <li>
-                                    <div class="sns-contents">
-                                        <a href="https://github.com/yukisakakima" target="_blank"><img class="sns-logo" src="/images/github-logo.png" alt="github-logo"></a>
-                                        <a href="https://github.com/yukisakakima" target="_blank" class="link">GitHub</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sns-contents">
-                                        <a href="https://qiita.com/yukisakakima" target="_blank"><img class="sns-logo" src="/images/qiita-logo.png" alt="qiita-logo"></a>
-                                        <a href="https://qiita.com/yukisakakima" target="_blank" class="link">Qitta</a>
-                                    </div>
-                                </li>
-                                <li class="sns-contents">
-                                    <a href="mailto:yuki.sakakima.work@gmail.com"><img class="sns-logo" src="/images/gmail-logo.png" alt="gmail-logo"></a>
-                                    <a href="mailto:yuki.sakakima.work@gmail.com" class="link">yuki.sakakima.work@gmail.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h2 class="section-title">Skills</h2>
-                    <p class="radar-introduction">1. 触った事がある。 2.使い方を大雑把に学んだ。 3.基本的な使い方にまだ漏れがあるが使用可能。 4. 基本的な使い方を把握。 5. 問題無く使用可能。</p>
-                    <div>
-                        <canvas id="radar"></canvas>
-                    </div>
-                    <h2 class="section-title">Awards</h2>
-                    <div class="awards-content">
-                        <p class="subtext">- Composer -</p>
-                        <p>2016年度 名古屋港水族館 コンペティション 楽曲採用</p>
-                        <p>2019年度 環境省主催 ダンスライブ Re-Style  CUP! 楽曲採用</p>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="wrapper">
-                <p><small>Copyright &copy; 2023 Yuki Sakakima</small></p>
-            </div>
-        </footer>
-        <div class="curzr" hidden></div>
-        <script src="/js/cursor.js"></script>
-        <script src="/js/particles.js"></script>
-        <script src="/js/chart.js"></script>
-    </body>
+          </div>
+          <h2 class="section-title">Skills</h2>
+          <p class="radar-introduction">
+            1. 触った事がある。 2.使い方を大雑把に学んだ。
+            3.基本的な使い方にまだ漏れがあるが使用可能。 4.
+            基本的な使い方を把握。 5. 問題無く使用可能。
+          </p>
+          <div>
+            <canvas id="radar"></canvas>
+          </div>
+          <h2 class="section-title">Awards</h2>
+          <div class="awards-content">
+            <p class="subtext">- Composer -</p>
+            <p>2016年度 名古屋港水族館 コンペティション 楽曲採用</p>
+            <p>2019年度 環境省主催 ダンスライブ Re-Style CUP! 楽曲採用</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <p><small>Copyright &copy; 2023 Yuki Sakakima</small></p>
+      </div>
+    </footer>
+    <div class="curzr" hidden></div>
+    <script src="/js/cursor.js"></script>
+    <script src="/js/particles.js"></script>
+    <script src="/js/chart.js"></script>
+  </body>
 </html>
