@@ -24,9 +24,14 @@
   - particle.js
   - Chart.js
   - Curzr
-- Node.js v15.0.0
-  - Express.js 4.18.2
-- Heroku
+- Node.js 22.x（ローカル確認・ビルド用）
+- Vercel（静的配信）
+
+## Deploy on Vercel :
+
+このサイトはサーバー側の動的処理を使用しないため、Vercel では静的サイトとして公開します。デプロイ時に `npm run build` が `pages/*.html` を `public/*.html` に生成し、`vercel.json` の `cleanUrls` 設定によって既存の `/profile`、`/works` などの URL を維持します。
+
+ローカル確認は `npm start` を実行してください。Vercel に公開する出力を確認する場合は、先に `npm run build` を実行します。
 
 ## Structure :
 
