@@ -5,8 +5,7 @@
     "node": "22.x"
   },
   "scripts": {
-    "build": "node scripts/build-static.js",
-    "start": "npm run build && node scripts/serve-static.js"
+    "start": "node scripts/serve-static.js"
   },
   "keywords": [],
   "author": "",
