@@ -42,18 +42,20 @@
         ><span class="material-symbols-outlined">contact_mail</span></a
       >
     </header>
-    <div id="particles-js"></div>
+    <div id="particles-js" aria-hidden="true"></div>
     <main>
-      <ol class="breadcrumb">
-        <li><a href="/" class="link breadcrumb-subtext">Home</a></li>
-        <li class="breadcrumb-subtext">&gt;</li>
-        <li>Works</li>
-      </ol>
+      <nav aria-label="パンくずリスト">
+        <ol class="breadcrumb">
+          <li><a href="/" class="link breadcrumb-subtext">Home</a></li>
+          <li class="breadcrumb-subtext">&gt;</li>
+          <li>Works</li>
+        </ol>
+      </nav>
       <div class="wrapper">
         <div class="content">
-          <h2 class="section-title">Works</h2>
-          <div class="works-content">
-            <div class="item">
+          <h2 id="works-heading" class="section-title">Works</h2>
+          <section class="works-content" aria-labelledby="works-heading">
+            <article class="item">
               <a href="yuki_sakakimas_portfolio">
                 <img
                   src="/images/portfolio-mockup-black.png"
@@ -66,8 +68,8 @@
                   <p class="item-date">2023.01.27</p>
                 </div>
               </a>
-            </div>
-            <div class="item">
+            </article>
+            <article class="item">
               <a href="quick_quill">
                 <img
                   src="/images/quick-quill-mockup.jpeg"
@@ -80,8 +82,8 @@
                   <p class="item-date">2023.06.01</p>
                 </div>
               </a>
-            </div>
-            <div class="item">
+            </article>
+            <article class="item">
               <a>
                 <img src="/images/dummy.png" alt="dummy" loading="lazy" />
                 <div class="item-content">
@@ -90,8 +92,8 @@
                   <p class="item-date">YYYY.MM.DD</p>
                 </div>
               </a>
-            </div>
-          </div>
+            </article>
+          </section>
         </div>
       </div>
     </main>
@@ -100,7 +102,7 @@
         <p><small>Copyright &copy; 2026 Yuki Sakakima</small></p>
       </div>
     </footer>
-    <div class="curzr" hidden></div>
+    <div class="curzr" aria-hidden="true" hidden></div>
     <script src="/js/cursor.js"></script>
     <script src="/js/particles.js"></script>
   </body>
