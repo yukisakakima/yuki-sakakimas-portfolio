@@ -29,9 +29,9 @@
 
 ## Deploy on Vercel :
 
-このサイトはサーバー側の動的処理を使用しないため、Vercel では静的サイトとして公開します。デプロイ時に `npm run build` が `pages/*.html` を `public/*.html` に生成し、`vercel.json` の `cleanUrls` 設定によって既存の `/profile`、`/works` などの URL を維持します。
+このサイトはサーバー側の動的処理を使用しないため、Vercel では `public/` を静的サイトとしてそのまま公開します。`vercel.json` の `cleanUrls` 設定により、既存の `/profile`、`/works` などの URL を維持します。
 
-ローカル確認は `npm start` を実行してください。Vercel に公開する出力を確認する場合は、先に `npm run build` を実行します。
+ローカル確認は `npm start` を実行してください。HTML・CSS・JavaScript・画像はすべて `public/` で編集します。
 
 ## Structure :
 
