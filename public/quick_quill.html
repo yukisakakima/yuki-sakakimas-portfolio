@@ -42,15 +42,17 @@
         ><span class="material-symbols-outlined">contact_mail</span></a
       >
     </header>
-    <div id="particles-js"></div>
+    <div id="particles-js" aria-hidden="true"></div>
     <main>
-      <ol class="breadcrumb">
-        <li><a href="/" class="link breadcrumb-subtext">Home</a></li>
-        <li class="breadcrumb-subtext">&gt;</li>
-        <li><a href="/works" class="link breadcrumb-subtext">Works</a></li>
-        <li class="breadcrumb-subtext">&gt;</li>
-        <li>Quick Quill</li>
-      </ol>
+      <nav aria-label="パンくずリスト">
+        <ol class="breadcrumb">
+          <li><a href="/" class="link breadcrumb-subtext">Home</a></li>
+          <li class="breadcrumb-subtext">&gt;</li>
+          <li><a href="/works" class="link breadcrumb-subtext">Works</a></li>
+          <li class="breadcrumb-subtext">&gt;</li>
+          <li>Quick Quill</li>
+        </ol>
+      </nav>
       <div class="wrapper">
         <div class="content">
           <p class="subtext">Web Application</p>
@@ -62,8 +64,8 @@
             loading="lazy"
           />
           <div>
-            <h3>Project</h3>
-            <div class="portfolio-content content-border">
+            <h3 id="quick-quill-project">Project</h3>
+            <section class="portfolio-content content-border" aria-labelledby="quick-quill-project">
               <p>
                 このアプリは「素早く学びを知識に」をコンセプトに開発したノートアプリ。<br />
                 Markdown記法による、見出し機能などのマークアップの記述を可能にする入力欄を設ける事により、学んだ内容をわかりやすく、記録に残すことができ、
@@ -76,18 +78,18 @@
               <br />
               <p>Period: 2023.05 ~ 2023.06</p>
               <p>Technology Stack: HTML CSS Ruby Ruby on Rails</p>
-            </div>
-            <h3>Goal</h3>
-            <div class="portfolio-content content-border">
+            </section>
+            <h3 id="quick-quill-goal">Goal</h3>
+            <section class="portfolio-content content-border" aria-labelledby="quick-quill-goal">
               <ul>
                 <li>&nbsp;- 見返した時に、見やすいノートを制作したい。</li>
                 <li>
                   &nbsp;- リファレンスをしっかり残して、ノートを取りたい。
                 </li>
               </ul>
-            </div>
-            <h3>Implementation</h3>
-            <div class="portfolio-content">
+            </section>
+            <h3 id="quick-quill-implementation">Implementation</h3>
+            <section class="portfolio-content" aria-labelledby="quick-quill-implementation">
               <ul>
                 <li>
                   &nbsp;-
@@ -104,7 +106,7 @@
                 alt="quick-quill-info"
                 loading="lazy"
               />
-            </div>
+            </section>
           </div>
         </div>
       </div>
@@ -114,7 +116,7 @@
         <p><small>Copyright &copy; 2026 Yuki Sakakima</small></p>
       </div>
     </footer>
-    <div class="curzr" hidden></div>
+    <div class="curzr" aria-hidden="true" hidden></div>
     <script src="/js/cursor.js"></script>
     <script src="/js/particles.js"></script>
   </body>
