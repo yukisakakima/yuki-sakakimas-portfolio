@@ -3,8 +3,8 @@
 ## Description :
 
 個人作品などを掲載したポートフォリオサイト。<br>
-初代 IBM パソコンが好きだったこともあり、そのようなデザインになっております。<br>
-また、グラフィックには、初代 IBM パソコンのコンセプトを崩さない為に、当時のスペックで可能なグラフィックとして幾何学模様を採用しております。
+初代 IBM パソコンをイメージしたデザインで作成。<br>
+また、グラフィックには、初代 IBM パソコンのコンセプトを崩さない為に、当時のスペックで可能なグラフィックとして幾何学模様を採用。
 
 ## View :
 
@@ -14,7 +14,7 @@
 
 ## Site URL :
 
-[Yuki Sakakima's Portfolio](https://yuki-sakakimas-portfolio.herokuapp.com/)
+[Yuki Sakakima's Portfolio](https://yuki-sakakimas-portfolio-4w1kzhi1n-yukis-projects-ca515550.vercel.app/)
 
 ## Languages and Tools :
 
